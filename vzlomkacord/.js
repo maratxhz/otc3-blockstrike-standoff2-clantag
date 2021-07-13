@@ -8,12 +8,14 @@ umer = false;
 UI.AddLabel ("vzlomka" + version)
 UI.AddCheckbox("vzlom v0.1");
 
+
 function vzlomat() {
 	if (UI.GetValue("Script Items", "vzlomat ") == 1) {
 		UI.SetEnabled( "Misc", "JAVASCRIPT", "Scripts", "Reload All", false );
 	} else 
 	UI.SetEnabled( "Misc", "JAVASCRIPT", "Scripts", "Reload All", true );
 }
+
 
 //ладно это модифаеД ПАСТА и мне пох 
 function vzlomtag() {
@@ -46,18 +48,20 @@ function vzlomtag() {
 
     }
     lasttime = time;
-
 }
 
 function roundstart(){
 	const roundstarte = ["ya vzlomal csgo global offenisf s pomoshu vzlomka vzlomka v"+ version];
 	Cheat.ExecuteCommand("say " + roundstarte);
 }
+	
+	
 function roundend(){
 	const roundende  = ["vzlomano by vzlomka v" + version];
     Cheat.ExecuteCommand("say " + roundende);
 }
 
+	
 function miyagi () {
     var entities = Entity.GetEnemies();
 
